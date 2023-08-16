@@ -11,7 +11,7 @@ const NavBar = () => {
     <nav className={styles.navBar}>
       <Logo />
     <SearchBar />
-    <Button children="give feedback"/>
+    <Button children="Give Feedback"/>
 
     </nav>
   )
