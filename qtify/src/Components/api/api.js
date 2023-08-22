@@ -5,7 +5,17 @@ export const fetchTopAlbums = async () => {
   console.log("Inside fecth top album");
   try {
     const res = await axios.get(`${BACKEND_ENDPOINT}/albums/top`);
-    console.log("data in api", res);
+    return res.data;
+  } catch (err) {
+    console.log("error in fetching");
+    console.err(err);
+  }
+};
+
+export const fetchNewAlbums = async () => {
+  console.log("Inside fecth top album");
+  try {
+    const res = await axios.get(`${BACKEND_ENDPOINT}/albums/new`);
     return res.data;
   } catch (err) {
     console.log("error in fetching");

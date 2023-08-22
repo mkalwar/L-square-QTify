@@ -6,7 +6,7 @@ const SearchBar = ({placeholder, data}) => {
   return (
     <>
     <form className={styles.wrapper}>
-      <input className={styles.search} placeholder={placeholder}/>
+      <input className={styles.search} placeholder="Search an album of your choice"/>
       <button className={styles.searchbutton} type="submit">
       <SearchIcon />
       </button>
