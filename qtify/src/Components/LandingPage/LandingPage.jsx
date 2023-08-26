@@ -7,6 +7,7 @@ import TopSection from "../Section/TopSection";
 import NewSection from "../Section/NewSection";
 import SongsSection from "../Section/SongsSection";
 import styles from "../../App.module.css";
+import FAQSection from "../Section/FAQSection";
 
 const LandingPage = () => {
   const [topAlbumData, setTopAlbumData] = useState([]);
@@ -88,6 +89,7 @@ const LandingPage = () => {
       <div className={styles.sectionWrapper}>
         <TopSection type="album" title="Top Albums" data={topAlbumData} />
         <NewSection type="album" title="New Albums" data={newAlbumData} />
+        <hr />
         <SongsSection
           type="song"
           title="Songs"
@@ -96,6 +98,8 @@ const LandingPage = () => {
           handleChange={handleChange}
         />
       </div>
+      <hr />
+      <FAQSection />
     </>
   );
 };
