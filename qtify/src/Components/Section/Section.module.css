@@ -16,16 +16,47 @@
     cursor: pointer;
     color: var(--color-primary);
 }
-h1{
-    
-    }
 
 .faq{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
-    font-weight: 600;
-    padding: 20px 0px 10px 0px;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 20px 20px 10px 20px;
     color: var(--color-white);
     }
+
+.section{
+    padding:20 px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+}
+.centerAccordionContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    max-height: 70vh; 
+}
+.accordion{
+    width: 1135px;
+    max-width: 70%;
+    margin: 10px;
+    }
+.accordionDetails{
+    display: flex;
+    align-items: flex-start;
+    max-height: 150px;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.answerContainer{
+  border-radius: 8px;
+}

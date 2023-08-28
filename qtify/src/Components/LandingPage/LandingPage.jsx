@@ -14,12 +14,12 @@ const LandingPage = () => {
   const [newAlbumData, setNewAlbumData] = useState([]);
   const [newSongs, setNewSongs] = useState([]);
   const [value, setValue] = useState(0);
-  const [toggle, setToggle] = useState(false);
+  // const [toggle, setToggle] = useState(false);
   const [filteredDataValues, setFilteredDataValues] = useState(newSongs);
 
-  const handleToggle = () => {
-    setToggle(!toggle);
-  };
+  // const handleToggle = () => {
+  //   setToggle(!toggle);
+  // };
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -89,7 +89,11 @@ const LandingPage = () => {
       <div className={styles.sectionWrapper}>
         <TopSection type="album" title="Top Albums" data={topAlbumData} />
         <NewSection type="album" title="New Albums" data={newAlbumData} />
-        <hr />
+        <hr
+          style={{
+            borderColor: "green",
+          }}
+        />
         <SongsSection
           type="song"
           title="Songs"
@@ -98,7 +102,11 @@ const LandingPage = () => {
           handleChange={handleChange}
         />
       </div>
-      <hr />
+      <hr
+        style={{
+          borderColor: "green",
+        }}
+      />
       <FAQSection />
     </>
   );
